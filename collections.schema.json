@@ -1,0 +1,83 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1613598235.json",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items": {
+    "$id": "#root/items",
+    "title": "Items",
+    "type": "object",
+    "required": ["id", "fullName", "category", "children"],
+    "properties": {
+      "id": {
+        "$id": "#root/items/id",
+        "title": "Id",
+        "type": "string",
+        "default": "",
+        "examples": ["planets"],
+        "pattern": "^.*$"
+      },
+      "fullName": {
+        "$id": "#root/items/fullName",
+        "title": "Fullname",
+        "type": "string",
+        "default": "",
+        "examples": ["Planet Signs"],
+        "pattern": "^.*$"
+      },
+      "category": {
+        "$id": "#root/items/category",
+        "title": "Category",
+        "type": "string",
+        "default": "",
+        "examples": ["backgrounds"],
+        "pattern": "^.*$"
+      },
+      "children": {
+        "$id": "#root/items/children",
+        "title": "Children",
+        "type": "array",
+        "default": [],
+        "items": {
+          "$id": "#root/items/children/items",
+          "title": "Items",
+          "type": "object",
+          "required": ["id", "fullName", "maskIds"],
+          "properties": {
+            "id": {
+              "$id": "#root/items/children/items/id",
+              "title": "Id",
+              "type": "string",
+              "default": "",
+              "examples": ["ceres"],
+              "pattern": "^.*$"
+            },
+            "fullName": {
+              "$id": "#root/items/children/items/fullName",
+              "title": "Fullname",
+              "type": "string",
+              "default": "",
+              "examples": ["Ceres"],
+              "pattern": "^.*$"
+            },
+            "maskIds": {
+              "$id": "#root/items/children/items/maskIds",
+              "title": "Maskids",
+              "type": "array",
+              "default": [],
+              "items": {
+                "$id": "#root/items/children/items/maskIds/items",
+                "title": "Items",
+                "type": "integer",
+                "examples": [10239],
+                "default": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

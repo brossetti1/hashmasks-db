@@ -1,13 +1,13 @@
 ## Hashmasks DB
 
-Open datasets for Hashmasks. Data from this repository is used by [HashmaskTools](https://mask-tools-alpha.netlify.app/)
+Open datasets for Hashmasks. Data from this repository is used by [HashmaskTools](https://hashmasktools.xyz/)
 
 ### Content
 
 See below for data schemas
 
 - `hashmasks.json` - Explicit traits of all 16383 Hashmasks
-- `collections.json` - Simple collections made by community
+- `simpleCollections.json` - Simple collections made by community
 
 There are also Typescript type definitions included that define data format in jsons.
 
